@@ -3,7 +3,7 @@ pragma solidity 0.8.18;
 
 contract MyToken {
     string public RagnaToken;
-    string public rToks;
+    string public rt;
     uint256 public tokenSupply;
 
     mapping(address => uint256) public balances;
