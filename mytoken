@@ -8,13 +8,6 @@ contract MyToken {
 
     mapping(address => uint256) public balances;
 
-    constructor(string memory RagnaToken, string memory rTok, uint256 tokenSupply) {
-        name = RagnaToken;
-        symbol = rTok;
-        totalSupply = tokenSupply;
-        balances[msg.sender] = tokenSupply;
-    }
-
     function mint(address _to, uint256 _value) public {
         totalSupply += _value;
         balances[_to] += _value;
